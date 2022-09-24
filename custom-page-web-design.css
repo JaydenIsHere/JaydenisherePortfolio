@@ -1,0 +1,115 @@
+.web-landing{
+ background:black;
+ min-height: 850px;   
+}
+.web-section{
+    background:black;
+}
+.landing-message{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+#web-main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#web-main:before{
+    content:'';
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, black,transparent );
+    z-index: 9;
+    /* create black shaow at bottom */
+}
+
+#web-main img{
+    position:absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    transition:none;
+}
+
+#landing-text{
+    position:relative;
+    color:white;
+    font-size: 9rem;
+    z-index: 7;
+    text-shadow: 7px 3px #0000007d;
+    transition: none;
+}
+
+.landing-message .landing-message-text1{
+    font-size: 3.8rem;
+    z-index: 2;
+    color:white;
+    position: absolute;
+    top:15%;
+    left: 53%;
+}
+.landing-message .landing-message-text2{
+    font-size: 1.8rem;
+    z-index: 2;
+    color:white;
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding:2rem;
+    position: absolute;
+    top:60%;
+    left: 45%;
+}
+.landing-message .web-photo{
+    width: 50%;
+    overflow: hidden;
+    z-index: 1;
+}
+.landing-message .web-photo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#road{
+    z-index: 8;
+}
+
+@media all and (max-width:1280px){
+    #landing-text{
+        font-size: 8rem;
+        text-align: center;
+    }
+}
+
+@media all and (max-width:767px){
+    #landing-text{
+        font-size: 6rem;
+    }
+    #web-main{
+        height: 90vh;
+    }
+    .web-landing{
+        background:black;
+        min-height: 600px;   
+       }
+}
+
+@media all and (max-width:500px){
+    #landing-text{
+        text-align: center;
+        font-size: 4.5rem;
+    }
+    #web-main{
+        height: 60vh;
+    }
+}

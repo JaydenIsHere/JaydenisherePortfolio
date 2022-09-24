@@ -1,0 +1,294 @@
+
+#video-main{
+    padding:3rem 0 5rem;
+    background-color: black;
+}
+.video-main-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("https://lh3.googleusercontent.com/Z6vQl8ayAaOgf2ykTmMfETmNpd7LwZL6yhhg3atRjDb7iaOSqxHpw2pOR9R88hEGmJMWOVV1goHW_5tizO9JY09TnPFZRfJQ3Z3jIBJ2iWQa7fgIjBDHFrUut_jt5YGYn1fTkL2kSA=w2400");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.video-main-wrapper .video-main-title{
+    margin: 7rem 0.5rem;
+    font-size: 5rem;
+    color:white;
+    text-shadow: 5px 5px #000000;
+}
+
+.video-main-content{
+    margin-top:1.2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+.video-main-content h2{
+    padding:0 2rem;
+    color:white;
+    flex:1 1 50%;
+    font-size: 3.2rem;
+}
+
+
+.video-main-content p{
+   
+    color:white;
+    padding:10px;
+    font-size: 20px;
+    flex:1 1 50%;
+}
+
+/*tool*/
+#video-tool{
+    background-color: var(--blue);
+    padding:1rem 0 3rem;
+}
+
+.video-tool-title{
+    font-size: 4rem;
+    font-weight: 700;
+    padding:1rem 0;
+    text-shadow: 2px 1px black;
+}
+.video-tool .tools-wrapper{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap:10px;
+}
+.video-tool .tool-wrapper{
+    text-align: center;
+}
+.video-tool .tool-image{
+    width: 10rem;
+    margin-inline: auto;
+}
+
+.video-tool .tool-image img{
+    width:100%;
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.video-tool .tools-wrapper h3{
+    color:rgb(0, 0, 0);
+    padding: 5px;
+}
+/*portfolio*/
+#video-portfolio{
+    background-color: #000000;
+}
+.video-portfolio-title{
+    font-size: 4rem;
+    font-weight: 700;
+    padding:3rem 0 0;
+    text-shadow: 2px 1px black;
+    text-align: center;
+    color:white;
+}
+
+.project-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4.5rem 0;
+    position: relative;
+}
+.project-wrapper2{
+    padding:10rem 0 8rem; 
+}
+.project-wrapper2:before{
+    /* saperator */
+    content : "";
+  position: absolute;
+  left    : 25%;
+  top  : 0;
+  height  : 5px;
+  width   : 50%;  /* or 100px */
+  border-bottom:5px solid var(--blue);
+  text-align: center;
+  margin: 1rem auto;
+}
+.our-client{
+    text-align: center;
+    color:white;
+}
+.our-client h2 {
+    font-size: 3.2rem;
+}
+.our-client p{
+    font-size: 1.2rem;
+    padding:0.5rem 2rem;
+}
+.video-section{
+    flex: 1 1 50%;
+}
+.video-wrapper{
+    width:100%;
+    height: 20rem;
+}
+.youtube-video1,.youtube-video2,.youtube-video3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project-content{
+    flex: 1 1 50%;
+}
+
+.thumbnails{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.thumbnails-wrapper{
+    margin:15px;
+    width:8rem;
+    overflow: hidden;
+}
+.thumbnails-wrapper img{
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;    
+}
+
+.thumbnails-wrapper img:hover{
+  transform: scale(1.1);
+}
+
+.project-content{
+align-self: flex-start;
+}
+
+.project-content h2 a{
+    font-size: 2.8rem;
+    color:var(--blue);
+}
+
+.project-content p{
+    margin:2rem 10px;
+    font-size: 20px;
+    color:white;
+}
+
+.tiktok-section{
+    flex: 1 1 25%;
+    display: flex;
+    justify-content: center;
+}
+.tiktok-section img{
+    width: 90%;
+    object-fit: cover;
+}
+
+.tiktok_title{
+   width: 15rem;
+   flex: 1 1 25%;
+}
+.tiktok_title a{
+    color:var(--blue);
+    font-size: 2.8rem;
+}
+.tiktok-content{
+    flex: 1 1 33%;
+    font-size: 1.2rem;
+    color: white;
+}
+.tiktok-content .btn{
+background-color: var(--blue);
+font-size: 1.5rem;
+color:white;
+font-weight: 600;
+width: 90%;
+}
+.tiktok-gif{
+   align-self: center;
+}
+.project-content .btn{
+background-color: var(--blue);
+font-size: 1.5rem;
+color:white;
+font-weight: 600;
+width: 90%;
+}
+@media only screen and (max-width: 1250px){
+    .project-wrapper{
+        flex-direction: column;
+    }
+    .project-content{
+        align-self: center;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 991px){
+    .video-main-wrapper .video-main-title{
+        font-size: 3.5rem;
+    }
+    .video-main-content h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .video-main-content p{
+        text-align: center;
+    }
+   .video-main-content{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .video-main-wrapper .video-main-title{
+        font-size: 2.5rem;
+    }
+    .video-main-content h2{
+        font-size: 1.8rem;
+        text-align: center;
+        margin:1rem 0;
+    }
+    .video-main-content p{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .video-tool .tool-image{
+        width: 8rem;
+    }
+    .video-tool .tool-image img{
+        width:100%;
+        object-fit: cover;
+    }
+    .video-tool .tools-wrapper h3{
+        color:white;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #video-main{
+        padding:3rem 0 1rem;
+    }
+    .video-main-wrapper .video-main-title{
+        font-size: 2.3rem;
+        text-align: center;
+    }
+    .video-tool .tool-image{
+        width: 5rem;
+    }
+    .video-tool .tools-wrapper h3{
+        color:white;
+        font-size: 0.8rem;
+    }
+    .video-tool-title,.video-portfolio-title{
+        font-size: 2rem;
+        padding:1rem 0;
+        text-shadow: 2px 1px black;
+    }
+}

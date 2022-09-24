@@ -1,0 +1,456 @@
+/*hero-section*/
+#home {
+    padding:5rem 0 5rem;
+    position: relative;
+    z-index: 0;
+    border-bottom: 2px var(--blue) solid;
+    background-color: black;
+    overflow: hidden;
+}
+
+
+.home-content {
+    font-family: 'Abhaya Libre', serif;
+    padding-left: 4rem;
+    align-self: center;
+    flex: 1 1 50%;
+}
+.home-content h1 {
+    font-weight: 700;
+    font-size: 5.5rem;
+    padding: 0.8rem 0;
+    text-shadow: 2px 1px black;
+    color:var(--white);
+  }
+.home-content .job-title {
+    font-size: 1.5rem;
+    text-shadow: 2px 1px black;
+    color:var(--white);
+  }
+.home-content .btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .hero-image {
+    flex: 1 1 40%;
+    overflow: hidden;
+    padding-right:2rem;
+  }
+  .hero-image img {
+    width: 100%;
+    object-fit: cover;
+  }
+.gear {
+    width: 35vw;
+}
+    .gear1 {
+      width: 70%;
+      position: absolute;
+      z-index: -100;
+      bottom: 40%;
+      left: 50%;
+      opacity: 0.5;
+    }
+    .gear2 {
+      width: 30%;
+      position: absolute;
+      z-index: -100;
+      bottom: 70%;
+      right: 80%;
+      opacity: 0.5;
+    }
+    .gear3 {
+      width: 40%;
+      position: absolute;
+      z-index: -100;
+      bottom: -50%;
+      right: 80%;
+      opacity: 0.5;
+    }
+/*about-me-section*/
+.about-me-wrapper{
+  margin: 8rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.about-me-wrapper:hover{
+  transform: translateY(5px);
+}
+.about-content{
+  flex:1 1 60%;
+  padding:2rem;
+}
+.about-content h2{
+  font-size:4rem;
+  font-weight: 600;
+}
+
+.about-content p{
+  font-size:20px;
+  font-weight: 500;
+  margin:2rem 0;
+}
+    .about-image {
+      flex:1 1 40%;
+      width: 600px;
+    }
+    .about-image img{
+      width:100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+.fa-globe{
+  font-size:3rem;
+  color:#f8d112;
+  padding-right:10px;
+}
+.fa-globe:hover{
+  color:#ffe45f;
+}
+.fa-youtube{
+  font-size:3rem;
+  color:red;
+  padding-right:10px;
+}
+.fa-youtube:hover{
+  color:rgb(255, 88, 88);
+}
+
+.fa-github{
+  color:black;
+  font-size:3rem;
+  padding-right:10px;
+}
+.fa-github:hover{
+  color:rgb(60, 60, 60);
+}
+
+/*my skill*/
+.my-skill{
+  padding:5rem 0;
+  background:black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.my-skill-title{
+  text-align: center;
+  font-size:4rem;
+  font-weight: 600;
+  padding:2rem 0
+}
+.skill-card-wraper{
+  padding:2rem 0;
+  gap:0 2rem;
+  padding:0 2rem;
+}
+.skill-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:white;
+  height: 25rem;
+  border-radius: 10px;
+}
+
+.card-1{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.651)),url("https://bit.ly/3pOEKzP");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35rem;
+  flex:1 1 33%;
+}
+.card-2{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.651)),url("https://bit.ly/3wiX0F4");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35rem;
+  flex:1 1 33%;
+}
+.card-3{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.651)),url("https://bit.ly/3Az106U");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 59rem;
+  flex:1 1 33%;
+}
+.card-1:hover{
+  background-size: 40rem;
+  box-shadow: var(--blue) 0px 6px 12px -2px, var(--blue) 0px 3px 7px -3px;
+}
+.card-2:hover{
+  background-size: 40rem;
+  box-shadow: var(--blue) 0px 6px 12px -2px, var(--blue) 0px 3px 7px -3px;
+}
+.card-3:hover{
+  background-size: 65rem;
+  box-shadow: var(--blue) 0px 6px 12px -2px, var(--blue) 0px 3px 7px -3px;
+}
+
+.skill-card p{
+  padding :0 1rem;
+  text-align: center;
+}
+
+.skill-card h3{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.skill-btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+  z-index: 1;
+  background: var(--blue);
+  color:black;
+}
+
+.skill-btn:hover{
+  color:rgb(42, 42, 42);
+}
+
+/*Contact me*/
+
+.contact-me{
+  background-color: black;
+  padding:8rem 0;
+}
+.contact-title{
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.contact-me p{
+  text-align: center;
+  font-size: 1.2rem;
+}
+.contact-me form{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-me .box{
+  padding: 0.5rem;
+  margin: 1.2rem 0;
+  font-size: 1.3rem;
+  color: var(--black);
+  text-transform: none;
+  border: none;
+  background-color: #ededed;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.2);
+}
+.contact-me textarea{
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 16px;
+  margin: 1rem 0;
+  resize: none;
+  background-color: #ededed;
+  border-radius: 10px;
+  box-shadow: 0 0.3rem 0.9rem rgba(0, 0, 0, 0.2);
+  border: 0;
+  height: 10rem;
+}
+
+.contact-me .btn{
+  background-color: var(--blue);
+  width: 90%;
+  color:black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  align-self: center;
+}
+.contact-me .btn:hover{
+  background-color: #70eafc;
+  transform:scale(1)
+}
+.bg-color-1 {
+  background-color: rgb(255, 255, 255);
+  transition: all 1.8s ease;
+  font-weight: 500;
+}
+  .bg-color-1 h3 {
+    color: black;
+  }
+
+    @media only screen and (max-width: 991px) {
+
+        .home {
+            padding: 1rem 0;
+        }
+        .home .home-content {
+            align-self: center;
+            margin: 0 1rem;
+            padding:0 1rem;
+          }
+
+          .home .home-content h1{
+            font-size: 4.5rem;
+          }
+
+          .home .home-content .job-title{
+            font-size: 1.5rem;
+          }
+          .home .gear1 {
+            width: 65%;
+            position: absolute;
+            z-index: -100;
+            bottom: 80%;
+            left: 60%;
+            opacity: 0.5;
+          }
+          .home .gear2 {
+            width: 30%;
+            position: absolute;
+            z-index: -100;
+            bottom: 60%;
+            right: 80%;
+            opacity: 0.5;
+          }
+          .home .gear3 {
+            width: 40%;
+            position: absolute;
+            z-index: -100;
+            top: 90%;
+            right: 80%;
+            opacity: 0.5;
+          }
+          .hero-image {
+            width: 28rem;
+            overflow: hidden;
+            padding:1rem;
+          }
+
+          /*about-me*/
+           .about-me .container .flex {
+          flex-direction: column;
+          } 
+          .about-image {
+            flex:1 1 40%;
+            width:auto;
+          }
+          .about-image img{
+            width:100%;
+            height: 28rem;
+            object-fit: cover;
+          }
+          .about-icon{
+            text-align: center;
+          }
+          .about-content{
+            padding:2rem 0.5rem;
+          }
+/*my-skill*/
+.skill-card h3{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/*contact*/
+.contact-me form{
+  width: 80%;
+}
+    }
+
+    @media only screen and (max-width: 767px){
+
+      /*hero-section*/
+      #home .flex{
+        flex-direction: column;
+      }
+      .home .home-content {
+        text-align: center;
+      }
+
+      .home .home-content h1{
+        font-size: 4rem;
+      }
+
+      .about-content h2{
+        font-size: 3rem;
+        text-align: center;
+      }
+      .about-content p{
+        font-size:20px;
+        padding:0 5px;
+        font-weight: 500;
+        margin:1.2rem 0;
+        text-align: center;
+      }
+      .about-me-wrapper{
+        margin: 5rem 0.5rem;
+      }
+      .skill-card-wraper{
+      flex-direction: column;
+      gap:1.2rem;
+      }
+      .skill-card{
+        padding:2rem 0.5rem;
+      }
+      .skill-card p{
+        padding :0 1rem;
+        text-align: center;
+        font-size: 17px;
+        align-self: center;
+      }
+      
+      .skill-card h3{
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+      .skill-btn{
+        margin-top: 1rem;
+        display: inline-block;
+        padding: 1rem 2.8rem;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 5px;
+        z-index: 1;
+        background: var(--blue);
+        color:black;
+      }
+    }
+
+    @media only screen and (max-width: 500px){
+      #home .home-content h1{
+      font-size: 3.5rem;
+      }
+      .home .home-content .job-title{
+        font-size: 1.1rem;
+      }
+      .hero-image {
+        width: 23rem;
+        overflow: hidden;
+        padding:1rem;
+      }
+      /*my-skill*/
+      .my-skill{
+        padding:1rem 0 5rem;
+      }
+      .my-skill-title{
+        font-size: 3.5rem;
+      }
+      /*contact*/
+      .contact-me{
+        padding:5rem 0;
+      }
+.contact-me form{
+  width: 90%;
+}
+.contact-me p{
+  padding:0 1.5rem;
+  font-size: 18px;
+}
+    }
