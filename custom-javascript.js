@@ -85,8 +85,14 @@ const changeColor = () => {
 }
 window.addEventListener('scroll', changeColor)
 
-const swiper = new Swiper('.swiper', {
-  slidesPerView: '2',
+const swiper = new Swiper('.video-swiper', {
+  effect: 'coverflow',
+  loop:true,
+  slidesPerView: 3,
+        spaceBetween: 2,
+        slidesPerGroup: 4,
+        loopFillGroupWithBlank: true,
+        grabCursor: true,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -98,19 +104,15 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
     breakpoints: {
         1400: {
             slidesPerView: 3,
         },
         640: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
-        320: {
-            slidesPerView: 1,
+        390: {
+            slidesPerView: 3,
         }
       }
 });
@@ -122,6 +124,8 @@ const youtubeVideo2 = document.querySelector('.youtube-video2');
 const thumbnails2 = document.querySelectorAll('.thumbnail2');
 const youtubeVideo3 = document.querySelector('.youtube-video3');
 const thumbnails3 = document.querySelectorAll('.thumbnail3');
+const youtubeVideo4 = document.querySelector('.youtube-video4');
+const thumbnails4 = document.querySelectorAll('.thumbnail4');
 function imageChangeSrc1(){
   thumbnails1.forEach(thumbnail1 =>{
     thumbnail1.addEventListener("click",() =>{
@@ -145,10 +149,18 @@ function imageChangeSrc3(){
     })
   })
 }
+function imageChangeSrc4(){
+  thumbnails4.forEach(thumbnail4 =>{
+    thumbnail4.addEventListener("click",() =>{
+      youtubeVideo4.src = thumbnail4.getAttribute("data-src")
+    })
+  })
+}
 
 imageChangeSrc1()
 imageChangeSrc2()
 imageChangeSrc3()
+imageChangeSrc4()
 
  //*****************************website landing animation****************************
  let bg = document.querySelector('#bg');

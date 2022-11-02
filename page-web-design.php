@@ -30,16 +30,41 @@
 <section class="web-section" id="web-section">
 <div class="container">
     <div class="landing-message text-white">
+
 <div class="web-photo">
 <img src="https://lh3.googleusercontent.com/xyLRAX6PkVsCxlCHU5UH2HNjmPgR5E6tZThzDpQ9qFi6CpQroGoOCSIGFcYjsBcZOB8c1WiXZSnTdFFZWJy73c1y1iwklWk_GguGsYb386TmC2N_fyLjheTEvZJIJMshafmsGuvC0g=w2400" alt="">
 </div>
     <h2 class="landing-message-text1">I am a <br><span class="text-blue">Front-end Developer</span></h2>
     <h2 class="landing-message-text2"> with experience in building<span class="text-black"> front-end websites </span>for small and medium sized businesses.</h2>
 </div>
-
-<!-- bottom of container is here -->
-
 </div>
+<!-- bottom of container is here -->
+</section>
+
+<!-- web working tool section -->
+<section class="web-working-tool-section" id="web-working-tool-section">
+
+<div class="container">
+<h2 class="web-working-tool-title white-color"><span class="text-black">Working</span> Tools</h2>
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="http://xinran.sg/wp-content/uploads/2020/04/xinran-957x1030-1.png" alt=""></div>
+    <div class="swiper-slide"><img src="https://bit.ly/3ds5Fi1" alt=""></div>
+    <div class="swiper-slide"><img src="https://bit.ly/3qRlkuh" alt=""></div>
+    <div class="swiper-slide"><img src="https://bit.ly/3UkOGiv" alt=""></div>
+    <div class="swiper-slide"><img src="https://bit.ly/3dhdGGJ" alt=""></div>
+    <div class="swiper-slide"><img src="https://bit.ly/3BN6HhW" alt=""></div>
+    <div class="swiper-slide"><img src="https://bit.ly/3UfR6ii" alt=""></div>
+    <div class="swiper-slide"><img src="https://bit.ly/3LjjY5f" alt=""></div>
+  </div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+</div>
+
 </section>
 
 

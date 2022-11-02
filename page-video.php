@@ -107,7 +107,7 @@
     <br>Welcome to find us to explore your next marketing campaign ideas!</p>
 </div>
 <!-- Slider main container -->
-<div class="swiper">
+<div class="video-swiper swiper">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
@@ -119,7 +119,6 @@
     <div class="swiper-slide"><img src="https://bit.ly/3BN6HhW" alt=""></div>
     <div class="swiper-slide"><img src="https://bit.ly/3UfR6ii" alt=""></div>
     <div class="swiper-slide"><img src="https://bit.ly/3LjjY5f" alt=""></div>
-    ...
   </div>
 
   <!-- If we need scrollbar -->
@@ -209,8 +208,54 @@
 
 </div>
 
-<!-- *******************TikTok****************** -->
+
+
+<!-- ***************project4********************-->
 <div class="project-wrapper project-wrapper2">
+
+<div class="video-section">
+    <div class="video-wrapper">
+    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" type="text/html" class ="youtube-video4" src="https://www.youtube.com/embed/hVSqRYPjSHA?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/en">youtubeembedcode.com/en/</a></small></div><div><small><a href="https://xn--utlndskabettingsidor-dzb.se/">utländskabettingsidor.se</a></small></div></iframe>
+        <!-- go to youtube embed generator -->
+    </div>
+
+<div class="thumbnails">
+
+<div class="thumbnails-wrapper">
+    <img src="https://bit.ly/3NisylH" data-src="https://www.youtube.com/embed/Uo4ysgHyr8A?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com" alt="" class="thumbnail4"> 
+</div>
+
+
+<div class="thumbnails-wrapper" >
+<img src="https://bit.ly/3Ue8naz" data-src="https://www.youtube.com/embed/wHQHiwKgSeE?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com" alt="" class="thumbnail4">
+</div>
+
+
+<div class="thumbnails-wrapper" >
+<img src="https://bit.ly/3Wlo7uC" data-src="https://www.youtube.com/embed/aPGPPuM_tQI?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com" alt="" class="thumbnail4" >   
+</div>
+
+
+<div class="thumbnails-wrapper">
+    <img src="https://bit.ly/3Njfw7w" data-src="https://www.youtube.com/embed/fiJtamUXbRI?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com" alt="" class="thumbnail4" > 
+</div>
+
+</div>
+
+    </div> 
+    <!-- video-section -->
+
+    <div class="project-content">
+        <h2><a href="https://www.youtube.com/playlist?list=PLCftdv0B_JugTqUgAo4D02Vpf2-JdL4A9">When Life Gives You Oranges, Make OrangeTee! (OrangeTee & Tie)</a></h2>
+        <p>This a video series for the recruitment period of 2022 that we collaborate with 18 agents to feature the company branding by sharing their success story in real estate industry</p>
+        <a href="https://www.youtube.com/watch?v=Lg3FtMVNHhA&list=PLCftdv0B_Jug9-iZRSTT-rKcCWrNPnZOQ" class="btn">Go to Channel</a>
+    </div>
+
+
+</div>
+
+<!-- *******************TikTok****************** -->
+<div class="project-wrapper2 project-wrapper-tiktok">
     <div class="tiktok_title">
     <h2><a href="https://www.tiktok.com/@oneorangetee">TikTok Videos (OrangeTee & Tie)</a></h2>
     </div>

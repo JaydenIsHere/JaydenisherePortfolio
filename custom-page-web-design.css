@@ -4,6 +4,7 @@
 }
 .web-section{
     background:black;
+    padding-bottom: 10rem;
 }
 .landing-message{
     display: flex;
@@ -83,7 +84,15 @@
 #road{
     z-index: 8;
 }
-
+/*web working tool*/
+.web-working-tool-section{
+    background: var(--blue);
+}
+.web-working-tool-title{
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 0;
+}
 @media all and (max-width:1280px){
     #landing-text{
         font-size: 8rem;
