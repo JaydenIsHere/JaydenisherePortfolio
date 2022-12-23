@@ -28,19 +28,22 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
     padding: 0;
     box-sizing: border-box;
     transition: all 0.30s linear;
-    outline: none;
-    text-decoration: none !important;
+    text-decoration: none!important;
     font-family: 'Roboto', sans-serif;
   }
 
-.white-color{
-    color:white;
-}
 
   body{
     /*push all content down by 80px as we have position fixed navbar*/
     padding-top: 70px !important;
   }
+  /* ::-webkit-scrollbar-thumb {
+    background:rgb(242, 0, 0);
+    border-style:solid;
+    border-radius:10px;
+  } */
+
+
 .nav-bar{
     display: block;
     padding: 0.5rem 0;
@@ -80,10 +83,6 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
     color:rgb(0, 0, 0);
     text-decoration: none;
     font-weight: 600;
-}
-.menu li a:hover{
-    color:rgb(89, 89, 89);
-   
 }
 
 .menu-arrow{
@@ -166,10 +165,10 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
     border-radius: 5px;
 } */
 
-.menu > .menu-item-has-children:hover ul.sub-menu{
+/* .menu > .menu-item-has-children:hover ul.sub-menu{
     opacity: 1;
     visibility:visible;
-}
+} */
 
 /*each drop down item*/
 .sub-menu li {
@@ -179,17 +178,9 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
-.sub-menu li:not(:first-child)
-{
-    border-top: 1px solid #EAC147;
-}
 
 .sub-menu li a{
     color:black;
-}
-.current-menu-item > a{
-border-bottom:solid 2px var(--gold);
-padding:5px;
 }
 
 /*Properties for Hamburger*/  
@@ -213,40 +204,16 @@ padding:5px;
    #block-20 .wp-block-social-links{
        justify-content: center;
    }
-
-   #block-20 .wp-container-1{
-       flex-wrap: unset;
-   }
-   /*login & cart*/
-   .login-wrapper{
-       display: flex;
-       justify-content: right;
-       align-items: center;
+   .is-layout-flex{
+    justify-content: center;
    }
 
-   .nav-link{
-    font-family: 'Tinos';
-       color:rgb(0, 0, 0);
-       padding:0;
-       margin-left:1rem;
-   }
 
-   .nav-link:hover{
-       color:var(--gold);
-   }
-   .items{
-    background: #ca2424;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-   }
 
 
 /*footer section*/
 .footer-widgets{
+  border-top:solid 2px white ;
     background-color: black;
 }
 /*social icon on footer*/
@@ -314,13 +281,7 @@ outline: none;
   margin:0.8rem;
 }
 
-/*Product search not found*/
-.elementor-widget-wc-archive-products .elementor-products-nothing-found{
-    color:black!important;
-    font-family: 'Tinos'!important;
-    font-size: 1.5rem;
-    text-align: center;
-}
+
 
 .section-title{
   font-size: 4rem;
@@ -354,7 +315,6 @@ justify-content: center!important;
   @media all and (max-width:1280px)
   {
 
-
       /*hide nav menu*/
 
       .nav-bar .main-menu #menu-jaydenishere_main_menu{
@@ -368,7 +328,7 @@ justify-content: center!important;
         right: 60%;
         bottom: 0;
         z-index: 999;
-        background-color: var(--blue);
+        background-color: white;
         transition: all 0.5s ease;
         opacity: 0;
         transform: translateX(-100%);
@@ -397,11 +357,11 @@ justify-content: center!important;
     
 
     .menu .menu-item a:not(#menu-footer_menu .menu-item a){
-        margin-left: 3rem;
-        font-size: 2rem;
-        color:rgb(255, 253, 253);
-        padding:0;
-        width:100%;
+      margin-left: 1.5rem;
+      font-size: 2rem;
+      color: rgb(0, 0, 0);
+      padding: 0;
+      width: 100%;
     }
     /*menu-arrow*/
     .menu-arrow{
@@ -563,7 +523,10 @@ justify-content: center!important;
     .section-title{
       font-size: 3rem;
     }
-
+    .copyright-text p{
+      margin:0.8rem;
+      font-size: 1.1rem;
+    }
   }
 
 @media all and (max-width:600px)
@@ -591,6 +554,10 @@ justify-content: center!important;
     object-fit: cover;
     padding: 1rem;
   }
+  .menu .menu-item a:not(#menu-footer_menu .menu-item a){
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+  }
 
 }
 
@@ -599,10 +566,6 @@ justify-content: center!important;
       /*push all content down by 80px as we have position fixed navbar*/
       padding-top: 50px !important;
     }
-    .menu .menu-item a{
-      margin-left: 2rem;
-      font-size: 1.6rem;
-  }
     .sub-menu ,.sub-menu .menu-item{
         width: 12rem;
       }
@@ -613,7 +576,10 @@ justify-content: center!important;
     .section-title{
       font-size: 2.5rem;
     }
- 
+    .copyright-text p{
+      margin:0.8rem;
+      font-size: 0.7rem;
+    }
   }
   @media all and (max-width:440px){
       .menu{
@@ -640,11 +606,7 @@ justify-content: center!important;
     .sub-menu li{
         margin: auto 0;
         padding:0.5rem 0;
-    }
-    .menu .menu-item a{
-      margin-left: 1.5rem;
-        font-size: 1.4rem;
-    }
+    } 
     .logo-image{
       margin:0 1.2rem 0.2rem;
     }

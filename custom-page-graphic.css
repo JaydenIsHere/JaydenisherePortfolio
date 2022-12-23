@@ -1,0 +1,17 @@
+
+.graphic-main{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('https://lh3.googleusercontent.com/hVKfXfNhDGq7qyJH_ARJI3P1kwim3r-5v593_NmpCmh9D7nbCvjhfVCV_pzjoBgJFclbdYLYRe614PlxUJ3Cx7fo6uAtKyr7x8h7-xXVPGgsNEUwWpCw6XDJiS8TjrSPKiAQxH99ug=w2400');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.graphic-main-container {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.graphic-skill-tools-container{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+}

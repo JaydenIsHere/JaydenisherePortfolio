@@ -40,7 +40,7 @@
 <section class="about-me" style="background-color:#00D2F2">
 
 <div class="container flex">
-<div class="about-me-wrapper flex" style="background-color:white">
+<div class="about-me-wrapper hidden flex" style="background-color:white">
 <!-- ************** -->
 <div class="about-content">
     <h2><span style="color:#00D2F2">About</span> Me</h2>
@@ -70,19 +70,19 @@
   <div class="skill-card card-1">
     <h3>Video <span class="text-blue">Creation</span></h3>
     <p class="text-white">I can create video that can help my client advertise their product or help them building branding image</p>
-    <a href="" class="skill-btn">See Portfolio</a>
+    <a href="https://jaydenishere.com/video" class="skill-btn">See Portfolio</a>
   </div>
 
   <div class="skill-card card-2">
     <h3>Graphic <span class="text-blue">Design</span></h3>
     <p class="text-white">Designed graphic is easier to catch reader's eyes and help them understand the message faster</p>
-    <a href="" class="skill-btn">See Portfolio</a>
+    <a href="https://jaydenishere.com/graphic" class="skill-btn">See Portfolio</a>
   </div>
 
   <div class="skill-card card-3">
     <h3>Web <span class="text-blue">Design</span></h3>
     <p class="text-white">I create interactive web design to help my client to deliver their business core value for their customers</p>
-    <a href="" class="skill-btn">See Portfolio</a>
+    <a href="https://jaydenishere.com/web-design" class="skill-btn">See Portfolio</a>
   </div>
 
 </div>

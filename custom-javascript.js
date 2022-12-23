@@ -7,29 +7,11 @@ const menuItem = document.querySelectorAll('.menu-item-has-children > a') //arro
 const subMenu = document.querySelectorAll('.sub-menu')
 // nav hambergur
 navbtn.addEventListener('click', () => {
-    navbar.classList.toggle('active')
-    navbtn.classList.toggle('change')
+    navbar.classList.toggle('active');
+    navbtn.classList.toggle('change');
   
   })
  
-  // // click anywhere to close the nav sidebar
-  // if(navbar.classList.contains('active'))
-  // anySection.addEventListener('click',()=>{
-  //   // navbar.classList.remove('active')
-  //   alert('clicked')
-  // })
-
-// show arrow down if has children
-const addIcon = () => {
-  for (let i = 0; i < menuItem.length; i++) {
-      menuItem[i].insertAdjacentHTML(
-        'afterend',
-        '<span class="menu-arrow"></span>'
-      )
-  }
-}
-addIcon()
-
 
 const muneArrow = document.querySelectorAll('.menu-arrow')
 // mobile drop down menu
@@ -37,12 +19,38 @@ const mobileDropdown = () => {
   for (let i = 0; i < muneArrow.length; i++) {
     //first layer correct target
     muneArrow[i].addEventListener('click', () => {
-      subMenu[i].classList.toggle('open')
-      muneArrow[i].classList.toggle('change')
+      subMenu[i].classList.toggle('open');
+      muneArrow[i].classList.toggle('change');
     })  
   }
 }
 mobileDropdown()
+
+//hover effect
+const hoverMenu = document.querySelector('#menu-jaydenishere_main_menu')
+const menuLink = document.querySelectorAll('.menu-item a')
+menuLink.forEach(l => l.classList.add('menu-link-hover'))
+
+const handleMouseEvent = function(e){
+  //event delegation
+
+if(e.target.classList.contains('menu-link-hover')){
+  const link = e.target;
+  //target sibling element
+const sibling = link.closest('#menu-jaydenishere_main_menu').querySelectorAll('.menu-link-hover')
+
+sibling.forEach(el => {
+  if(el !== link) el.style.opacity = this;})
+}
+
+}
+
+hoverMenu.addEventListener('mouseover',handleMouseEvent.bind(0.5));
+hoverMenu.addEventListener('mouseout',handleMouseEvent.bind(1));
+
+
+
+
 
 //about-me simple slideshow
 var i = 0;
@@ -64,10 +72,11 @@ function changeimg(){
   }else{
     i = 0;
   }
-  setTimeout("changeimg()",time)
+  setTimeout("changeimg()",time);
 }
 
 window.onload = changeimg;//run function when the page intially load
+
 
 //change contact me background color
 const changeColor = () => {
@@ -77,13 +86,13 @@ const changeColor = () => {
       window.innerHeight + window.pageYOffset + contact.offsetHeight >
       document.body.offsetHeight
     ) {
-      contact.classList.add('bg-color-1')
+      contact.classList.add('bg-color-1');
     } else {
-      contact.classList.remove('bg-color-1')
+      contact.classList.remove('bg-color-1');
     }
   }
 }
-window.addEventListener('scroll', changeColor)
+window.addEventListener('scroll', changeColor);
 
 const swiper = new Swiper('.video-swiper', {
   effect: 'coverflow',
@@ -115,7 +124,7 @@ const swiper = new Swiper('.video-swiper', {
             slidesPerView: 3,
         }
       }
-});
+})
 
 //thumbnail change video
 const youtubeVideo1 = document.querySelector('.youtube-video1');
@@ -126,41 +135,20 @@ const youtubeVideo3 = document.querySelector('.youtube-video3');
 const thumbnails3 = document.querySelectorAll('.thumbnail3');
 const youtubeVideo4 = document.querySelector('.youtube-video4');
 const thumbnails4 = document.querySelectorAll('.thumbnail4');
-function imageChangeSrc1(){
-  thumbnails1.forEach(thumbnail1 =>{
-    thumbnail1.addEventListener("click",() =>{
-      youtubeVideo1.src = thumbnail1.getAttribute("data-src")
-    })
+
+
+const imageChange = (link,video) =>{
+  link.forEach(l =>{
+    l.addEventListener("click",() =>{
+      video.src = l.dataset.src;
+    });
   })  
 }
+imageChange(thumbnails1,youtubeVideo1);
+imageChange(thumbnails2,youtubeVideo2);
+imageChange(thumbnails3,youtubeVideo3);
+imageChange(thumbnails4,youtubeVideo4);
 
-function imageChangeSrc2(){
-  thumbnails2.forEach(thumbnail2 =>{
-    thumbnail2.addEventListener("click",() =>{
-      youtubeVideo2.src = thumbnail2.getAttribute("data-src")
-    })
-  })
-}
-
-function imageChangeSrc3(){
-  thumbnails3.forEach(thumbnail3 =>{
-    thumbnail3.addEventListener("click",() =>{
-      youtubeVideo3.src = thumbnail3.getAttribute("data-src")
-    })
-  })
-}
-function imageChangeSrc4(){
-  thumbnails4.forEach(thumbnail4 =>{
-    thumbnail4.addEventListener("click",() =>{
-      youtubeVideo4.src = thumbnail4.getAttribute("data-src")
-    })
-  })
-}
-
-imageChangeSrc1()
-imageChangeSrc2()
-imageChangeSrc3()
-imageChangeSrc4()
 
  //*****************************website landing animation****************************
  let bg = document.querySelector('#bg');
@@ -170,7 +158,7 @@ imageChangeSrc4()
  let text = document.querySelector('#landing-text');
 
  window.addEventListener('scroll',function(){
-  var value = window.scrollY;
+  let value = window.scrollY;
 
   bg.style.top = value * 0.5 + 'px';
   moon.style.left = -value * 1 + 'px';
@@ -178,4 +166,47 @@ imageChangeSrc4()
   road.style.top = value * 0.15 + 'px';
   text.style.top = value * 1 + 'px';
 
- })
+ });
+
+
+
+//web project animation
+const webProject = document.querySelectorAll('.project');
+
+const webProjectAbsCallback = function(entries,observer){
+  console.log(entries)
+const [entry] = entries;
+if(!entry.isIntersecting) return;
+entry.target.classList.remove('project-hidden');
+observer.unobserve(entry.target)
+
+}
+
+const webProjectAbs = new IntersectionObserver(webProjectAbsCallback,{
+  root:null,
+  threshold:0.3
+});
+
+webProject.forEach(function(web)  {
+  web.classList.add('project-hidden');
+  webProjectAbs.observe(web);
+})
+
+
+ //Intersection will affected other function...so I put it at last
+const aboutMeSection = document.querySelector('.about-me-wrapper');
+
+const aboutAbsCallback = function(entries,observer){
+const [entry] = entries;
+if(!entry.isIntersecting) return;
+
+entry.target.classList.remove('hidden');
+if (entry.isIntersecting) {
+  observer.disconnect();
+}
+}
+const aboutAbs = new IntersectionObserver(aboutAbsCallback,{
+  root:null,
+  threshold:0.3
+});
+aboutAbs.observe(aboutMeSection)

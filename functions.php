@@ -11,6 +11,7 @@ function jaydenishere_script(){
 	wp_enqueue_style('jaydenishere-page-style',get_template_directory_uri() . '/custom-page.css','all');
 	wp_enqueue_style('jaydenishere-page-video-style',get_template_directory_uri() . '/custom-page-video.css','all');
 	wp_enqueue_style('jaydenishere-page-web-design-style',get_template_directory_uri() . '/custom-page-web-design.css','all');
+	wp_enqueue_style('jaydenishere-page-graphic-style',get_template_directory_uri() . '/custom-page-graphic.css','all');
     //address of style sheet,it doesn't have dependency
 
   	// font-awesome

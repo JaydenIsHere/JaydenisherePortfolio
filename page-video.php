@@ -95,7 +95,7 @@
 
     <!-- video-section -->
 
-    <div class="project-content">
+    <div class="video-project-content">
         <h2><a href="https://www.youtube.com/channel/UC-SxNLOm5L7vEcdUnH_nUAg">Personal YouTube Channel (ST Warrior)</a></h2>
         <p>I have been Managing this YouTube Channel for 3 years and upload 150+ video contents.We have been creating different type of content that able to communicate with our audience through our creativity.</p>
         <a href="https://www.youtube.com/channel/UC-SxNLOm5L7vEcdUnH_nUAg" class="btn">Go to Channel</a>
@@ -157,7 +157,7 @@
     </div> 
     <!-- video-section -->
 
-    <div class="project-content">
+    <div class="video-project-content">
         <h2><a href="https://www.youtube.com/playlist?list=PLCftdv0B_JuiZa7zKI1WLQvHL_dtWbqzR">Do You Know Property? (OrangeTee & Tie)</a></h2>
         <p>This series video is stand at corporate level to deliver the company message through our creative ideas to create a light-hearted series of video.</p>
         <a href="https://www.youtube.com/playlist?list=PLCftdv0B_JuiZa7zKI1WLQvHL_dtWbqzR" class="btn">Go to Channel</a>
@@ -199,7 +199,7 @@
     </div> 
     <!-- video-section -->
 
-    <div class="project-content">
+    <div class="video-project-content">
         <h2><a href="https://www.youtube.com/playlist?list=PLCftdv0B_JugTqUgAo4D02Vpf2-JdL4A9">Property Listing Videos (OrangeTee & Tie)</a></h2>
         <p>I have work with several property agent for their listing property as now the video marketing is become an essential marketing strategy. </p>
         <a href="https://www.youtube.com/playlist?list=PLCftdv0B_JugTqUgAo4D02Vpf2-JdL4A9" class="btn">Go to Channel</a>
@@ -245,7 +245,7 @@
     </div> 
     <!-- video-section -->
 
-    <div class="project-content">
+    <div class="video-project-content">
         <h2><a href="https://www.youtube.com/playlist?list=PLCftdv0B_JugTqUgAo4D02Vpf2-JdL4A9">When Life Gives You Oranges, Make OrangeTee! (OrangeTee & Tie)</a></h2>
         <p>This a video series for the recruitment period of 2022 that we collaborate with 18 agents to feature the company branding by sharing their success story in real estate industry</p>
         <a href="https://www.youtube.com/watch?v=Lg3FtMVNHhA&list=PLCftdv0B_Jug9-iZRSTT-rKcCWrNPnZOQ" class="btn">Go to Channel</a>

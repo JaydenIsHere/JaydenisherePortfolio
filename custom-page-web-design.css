@@ -1,6 +1,22 @@
+:root{
+    --title-XL:  clamp(2.5rem,5vw + 1em,5rem);
+    --img-logo:  clamp(5rem,8vw + 1em,8rem);
+    --logo-title:  clamp(1rem,1.5vw + 1em,1.5rem);
+     /* min , normal size(vw) , max */
+    --project-title :clamp(2rem,2.5vw + 1em,2.5rem);
+    --project-title-span :clamp(0.8rem,1vw + 1em,1rem);
+     --description-lg:clamp(0.5rem,2.8vw + 0.5rem , 2rem);
+     --blue:#00D2F2;
+    }
+
+
+    
+/* *{
+    border:solid 2px red ;
+} */
 .web-landing{
  background:black;
- min-height: 850px;   
+ min-height: 850px;  
 }
 .web-section{
     background:black;
@@ -53,15 +69,19 @@
 }
 
 .landing-message .landing-message-text1{
-    font-size: 3.8rem;
+    font-size: var(--title-XL);
     z-index: 2;
     color:white;
     position: absolute;
-    top:15%;
-    left: 53%;
+    top: -23%;
+    left: 40%;
+    width: 61%;
+}
+.landing-message .landing-message-text1 span{
+    width: 100%;
 }
 .landing-message .landing-message-text2{
-    font-size: 1.8rem;
+    font-size: var(--description-lg);
     z-index: 2;
     color:white;
     background-color: var(--blue);
@@ -86,39 +106,277 @@
 }
 /*web working tool*/
 .web-working-tool-section{
-    background: var(--blue);
+    background: white;
+    margin: 2rem 0;
 }
 .web-working-tool-title{
     text-align: center;
     font-size: 3.5rem;
     margin: 0;
+    color: black;
 }
+.skill-tools-container{
+    display: grid; 
+  grid-template-columns: repeat(5,1fr);
+}
+.skill-tools{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.skill-tools h3{
+    text-align: center;
+    font-size: var(--logo-title);
+    width: 100%;
+}
+.skill-tools .tool-image {
+    width:var(--img-logo);
+    height: auto;
+}
+.skill-tools .tool-image img{
+    width:100%;
+    object-fit: cover;
+}
+.skill-tools .tool-image #css{
+    width: 85%;
+}
+.skill-title{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size: var(--title-XL);
+    z-index: 7;
+    text-shadow: 2px 2px #0101017d;
+    transition: none;
+    margin: 2rem 0;
+}
+
+/*----------------project------------------*/
+.project-section {
+    padding-bottom: 5rem;
+    background-color: #000;
+
+}
+    .project-section .project-header {
+      font-family: 'Abhaya Libre', serif;
+      text-align: center;
+      margin: 3rem 0.5rem;
+    }
+      .project-section .project-header h1 {
+        font-size: var(--title-XL);
+      }
+      .project-section .project-header h3 {
+        font-size: var(--logo-title);
+      }
+
+      .project {
+        margin: 5rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(0);
+      }
+      .project-hidden{
+        transform: translateY(5rem);
+        opacity: 0;
+      }
+      .projects .project:nth-child(2),
+      .projects .project:nth-child(4),
+      .projects .project:nth-child(6),
+      .projects .project:nth-child(8) {
+        flex-direction: row-reverse;
+      }
+        .project-content {
+          align-self: center;
+          flex: 1 1 50%;
+        }
+        .project-image{
+            flex: 1 1 50%;
+            width:auto;
+        }
+        .project-image img{
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+           .project-content  .content-text {
+            padding: 1.5rem 1rem;
+            line-height: 1.3;
+            font-size: 20px;
+            color: white;
+          }
+           .project-content  h1 {
+            color: white;
+            font-size: var(--project-title);
+            padding: 0 1rem;
+          }
+          .project-content  h1 span {
+            font-size: var(--project-title-span);
+          }
+          .project-buttoms {
+            display: flex;
+            justify-content: center;
+          }
+          .project-buttoms .project-btn {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #000;
+              background-color: var(--blue);
+              cursor: pointer;
+              border-radius: 5px;
+              font-weight: 600;
+              height: 4rem;
+              padding: 1rem;
+              width: 70%;
+          }
+          .project-btn:hover {
+                transform: scale(0.95);
+              }
+              .project-buttoms i {
+                margin-left: 5px;
+                font-size: 1.3rem;
+              }
+              .project-buttoms  p {
+                color: #000;
+                margin: 0 10px;
+              }
+            
+     
 @media all and (max-width:1280px){
     #landing-text{
-        font-size: 8rem;
+        font-size: 6rem;
+        margin-bottom: 5rem;
         text-align: center;
+    }
+    .landing-message .landing-message-text1{
+        top:0%;
     }
 }
 
-@media all and (max-width:767px){
-    #landing-text{
-        font-size: 6rem;
+@media all and (max-width:1100px){
+    .landing-message .web-photo{
+        width: 80%;
+        overflow: hidden;
+        z-index: 1;
+        text-align: center;
+        margin: 0 auto;
     }
+    .landing-message .landing-message-text1{
+        font-size: var(--title-XL);
+        text-shadow: 2px 2px black;
+        z-index: 2;
+        color: white;
+        position: absolute;
+        top: 24%;
+        left: 5%;
+        width: 90%;
+        }
+    .landing-message .landing-message-text1 span{
+        width: 100%;
+    }
+    .landing-message .landing-message-text2{
+        top: 75%;
+        left: 27%;
+    }
+    .project {
+      flex-direction: column;
+      }
+      .project-content {
+        align-self: center;
+        flex: 1 1 100%;
+        margin: 1rem;
+        text-align: center;
+      }
+      .project-image{
+          flex: 1 1 100%;
+          width:auto;
+          margin: 1rem;
+      }
+      .projects .project:nth-child(2),
+      .projects .project:nth-child(4),
+      .projects .project:nth-child(6),
+      .projects .project:nth-child(8) {
+        flex-direction: column;
+      }
+}
+
+@media all and (max-width:925px){
     #web-main{
         height: 90vh;
+    }
+    .skill-tools h3{
+        font-size: 1.3rem;
+       }
+}
+
+@media all and (max-width:830px){
+    #web-main{
+        height: 56vh;
     }
     .web-landing{
         background:black;
         min-height: 600px;   
+       }
+       .skill-tools h3{
+        font-size: 1.1rem;
+       }
+}
+
+@media all and (max-width:767px){
+    #landing-text{
+        font-size: 5rem;
+    }
+    .landing-message .landing-message-text2 {
+        top: 99%;
+        left: 1%;
+    }
+    #web-main{
+        height: 54vh;
+    }
+    .web-landing{
+        background:black;
+        min-height: 550px;   
+       }
+       .landing-message .web-photo{
+        width:90%;
+       }
+       .landing-message .landing-message-text2{
+        padding:1rem;
+       }
+       .skill-tools-container{
+        grid-template-columns: repeat(3, 1fr);
        }
 }
 
 @media all and (max-width:500px){
     #landing-text{
         text-align: center;
-        font-size: 4.5rem;
+        font-size: 4.2rem;
+    }
+
+    .web-landing{
+        background:black;
+        min-height: 400px;   
+        margin-top: 1.5rem;
+       }
+}
+@media all and (max-width:450px){
+    #landing-text{
+        text-align: center;
+        font-size: 4rem;
     }
     #web-main{
-        height: 60vh;
+        height: 45vh;
+    }
+}
+@media all and (max-width:420px){
+    #landing-text{
+        text-align: center;
+        font-size: 3rem;
+    }
+    #web-main{
+        height: 37vh;
     }
 }
