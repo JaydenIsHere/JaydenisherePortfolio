@@ -91,7 +91,7 @@ const changeColor = () => {
       contact.classList.remove('bg-color-1');
     }
   }
-}
+};
 window.addEventListener('scroll', changeColor);
 
 const swiper = new Swiper('.video-swiper', {
@@ -124,7 +124,7 @@ const swiper = new Swiper('.video-swiper', {
             slidesPerView: 3,
         }
       }
-})
+});
 
 //thumbnail change video
 const youtubeVideo1 = document.querySelector('.youtube-video1');
@@ -169,19 +169,17 @@ imageChange(thumbnails4,youtubeVideo4);
  });
 
 
-
-//web project animation
+//------web project animation slide up--------
 const webProject = document.querySelectorAll('.project');
 
 const webProjectAbsCallback = function(entries,observer){
   console.log(entries)
 const [entry] = entries;
 if(!entry.isIntersecting) return;
-entry.target.classList.remove('project-hidden');
+//only loaded all images then reveal image
+  entry.target.classList.remove('project-hidden');
 observer.unobserve(entry.target)
-
 }
-
 const webProjectAbs = new IntersectionObserver(webProjectAbsCallback,{
   root:null,
   threshold:0.3
@@ -192,14 +190,41 @@ webProject.forEach(function(web)  {
   webProjectAbs.observe(web);
 })
 
+//------------Lazy load-------------
+const lazyLoadAllImages = function(){
+const lazyLoadImages = document.querySelectorAll('img[data-lazy-src]');
 
- //Intersection will affected other function...so I put it at last
+const lazyLoadAbsCallback = function(entries,observer){
+const [entry] = entries;
+if(!entry.isIntersecting) return;
+const lazySrc = entry.target.dataset.lazySrc
+entry.target.setAttribute('src',lazySrc);
+
+entry.target.addEventListener('load',function(){
+  entry.target.classList.remove('image-blur');
+})
+observer.unobserve(entry.target)
+}
+
+const lazyLoadAbs = new IntersectionObserver(lazyLoadAbsCallback,{
+  root:null,
+  threshold:0.2
+});
+
+lazyLoadImages.forEach(function(li)  {
+  li.classList.add('image-blur');
+  lazyLoadAbs.observe(li);
+})
+}
+lazyLoadAllImages()
+
+//  Intersection will affected other function...so I put it at last
+const aboutFadeIn = function(){
 const aboutMeSection = document.querySelector('.about-me-wrapper');
 
 const aboutAbsCallback = function(entries,observer){
 const [entry] = entries;
 if(!entry.isIntersecting) return;
-
 entry.target.classList.remove('hidden');
 if (entry.isIntersecting) {
   observer.disconnect();
@@ -209,4 +234,6 @@ const aboutAbs = new IntersectionObserver(aboutAbsCallback,{
   root:null,
   threshold:0.3
 });
-aboutAbs.observe(aboutMeSection)
+aboutAbs.observe(aboutMeSection);
+}
+aboutFadeIn()
