@@ -37,12 +37,9 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
     /*push all content down by 80px as we have position fixed navbar*/
     padding-top: 70px !important;
   }
-  /* ::-webkit-scrollbar-thumb {
-    background:rgb(242, 0, 0);
-    border-style:solid;
-    border-radius:10px;
-  } */
-
+  html {
+    scroll-behavior: smooth;
+  }
 
 .nav-bar{
     display: block;

@@ -20,8 +20,8 @@
 <div class="home-content">
 <h4 style="color:white">Hi There,</h4>
 <h1>I'm <span style="color:#00D2F2">Jayden</span></h1>
-<h4 class="job-title">A Digital Creator & Web Designer</h4>
-<a href="#" class="btn btn-blue">My Portfolio</a>
+<h4 class="job-title" data-text='A Digital Creator & Web Designer'>A Digital Creator & Web Designer</h4>
+<a href="#my-skill" class="btn btn-blue">My Portfolio</a>
 </div>
 
 <div class="hero-image">
@@ -62,7 +62,7 @@
 </section>
 
 <!-- my skill-section -->
-<section class="my-skill">
+<section class="my-skill" id='my-skill'>
 <h2 class="my-skill-title text-blue"><span style="color:white">My</span> Skill</h2>
 
 <div class="skill-card-wraper container flex">
@@ -94,7 +94,7 @@
 <p class="text-center text-black">Submit the form below so I can get back to you as soon as posible</p>
 <div class="container">
 
-<form action="https://formsubmit.co/your@email.com" method="POST">
+<form action="https://formsubmit.co/classic19931126@gmail.com" method="POST">
   <input type="name" name="name" placeholder="Full Name" class="box">
   <input type="email" name="email" placeholder="Your Email" class="box">
   <textarea name="message" placeholder="Your Message" class="box"></textarea>

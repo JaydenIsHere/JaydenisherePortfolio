@@ -23,9 +23,34 @@
     color:var(--white);
   }
 .home-content .job-title {
+  position: relative;
+  width: 58%;
     font-size: 1.5rem;
-    text-shadow: 2px 1px black;
-    color:var(--white);
+    /* text-shadow: 2px 1px black; */
+    -webkit-text-stroke: 0.05vw white;
+    /* color:var(--white); */
+  }
+  .home-content .job-title::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: var(--blue);
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid var(--blue);
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+  }
+
+  @keyframes animate{
+    0%,10%,100%{
+     width:0;
+    }
+    70%,90%{
+      width: 100%;
+    }
   }
 .home-content .btn {
     font-family: 'Roboto', sans-serif;
@@ -268,7 +293,9 @@
   border: 0;
   height: 10rem;
 }
-
+.contact-me textarea:focus, .contact-me input:focus{
+  outline: none;
+}
 .contact-me .btn{
   background-color: var(--blue);
   width: 90%;
@@ -289,7 +316,24 @@
   .bg-color-1 h3 {
     color: black;
   }
-
+  @media only screen and (max-width: 1280px){
+    .home .home-content .job-title{
+      width: 65%;
+    }
+    @keyframes animate{
+      0%,20%,100%{
+       width:0;
+      }
+      70%,90%{
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: 1160px){
+    .home .home-content .job-title{
+      width: 80%;
+    }
+  }
     @media only screen and (max-width: 991px) {
 
         .home {
@@ -302,11 +346,20 @@
           }
 
           .home .home-content h1{
-            font-size: 4.5rem;
+            font-size: 3.2rem;
           }
 
           .home .home-content .job-title{
             font-size: 1.5rem;
+            width: 100%;
+          }
+          @keyframes animate{
+            0%,40%,100%{
+             width:0;
+            }
+            70%,90%{
+              width: 100%;
+            }
           }
           .home .gear1 {
             width: 65%;
@@ -368,10 +421,17 @@
   width: 80%;
 }
     }
-
+    @media only screen and (max-width: 786px){
+      .home .home-content .job-title{
+        width: 101%;
+      }
+    }
     @media only screen and (max-width: 767px){
 
       /*hero-section*/
+      #home{
+        min-height: 800px;
+      }
       #home .flex{
         flex-direction: column;
       }
@@ -399,7 +459,7 @@
       }
       .skill-card-wraper{
       flex-direction: column;
-      gap:1.2rem;
+      gap:2.2rem;
       }
       .about-content p{
         font-size:17px;
@@ -431,6 +491,19 @@
         background: var(--blue);
         color:black;
       }
+      .home-content .job-title::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        color: var(--blue);
+        -webkit-text-stroke: 0vw white;
+        border-right: 2px solid var(--blue);
+        overflow: hidden;
+        animation: animate 5s linear infinite;
+      }
     }
 
     @media only screen and (max-width: 500px){
@@ -439,6 +512,15 @@
       }
       .home .home-content .job-title{
         font-size: 1.1rem;
+        width: 100%;
+      }
+      @keyframes animate{
+        0%,100%{
+         width:0;
+        }
+        10%,90%{
+          width: 100%;
+        }
       }
       .hero-image {
         width: 23rem;
@@ -463,4 +545,14 @@
   padding:0 1.5rem;
   font-size: 18px;
 }
+    }
+
+    @media only screen and (max-width: 360px){
+      #home .home-content h1{
+        font-size: 2.5rem;
+      }
+      .home .home-content .job-title{
+        font-size: 0.8rem;
+        width: 100%;
+      }
     }
